@@ -1,0 +1,76 @@
+{
+  "expo": {
+    "name": "Lumoscope",
+    "scheme": "com.lumoscope",
+    "slug": "Lumoscope",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "icon": "assets/appstore.png",
+    "splash": {
+      "image": "./assets/lumoSplash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#15619F"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "entitlements": {
+        "aps-environment": "production"
+      },
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.lumoscope",
+      "buildNumber": "1.0.0",
+      "icon": "assets/Assets.xcassets/AppIcon.appiconset/1024.png",
+      "googleServicesFile":"GoogleService-Info.plist"
+    },
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "https",
+              "host": "com.real_drizzy.Lumoscope",
+              "pathPrefix": "/news"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ],
+      "package": "com.real_drizzy.Lumoscope"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "@react-native-firebase/app",
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Montserrat-Bold.ttf",
+            "./assets/fonts/Montserrat-Regular.ttf",
+            "./assets/fonts/Montserrat-Medium.ttf",
+            "./assets/fonts/Montserrat-Thin.ttf"
+          ]
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "a1b64d09-0454-4621-9837-df74d77a9dd1"
+      }
+    }
+  }
+}
